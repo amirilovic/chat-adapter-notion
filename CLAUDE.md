@@ -4,14 +4,15 @@ ChatSDK adapter for Notion. Enables using Notion page comments as a chat channel
 
 ## Project
 
-Standalone TypeScript package. Biome linter, Vitest test runner.
+Standalone TypeScript package. Uses Vite+ (`vp`) as the unified toolchain (Oxlint, Oxfmt, Vitest, tsdown).
 
 ## Commands
 
-- `pnpm lint` — Biome check
-- `pnpm typecheck` — TypeScript type checking
-- `pnpm test` — Vitest (all tests)
-- `pnpm build` — Build to dist/
+- `pnpm lint` — Lint + format + typecheck via `vp check`
+- `pnpm lint:fix` — Auto-fix lint/format issues via `vp check --fix`
+- `pnpm typecheck` — Typecheck via `vp check`
+- `pnpm test` — Vitest via `vp test`
+- `pnpm build` — Build to dist/ via `vp pack`
 
 ## Architecture
 
