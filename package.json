@@ -24,5 +24,6 @@
   },
   "peerDependencies": {
     "chat": "^4.15.0"
-  }
+  },
+  "packageManager": "pnpm@10.13.1"
 }
