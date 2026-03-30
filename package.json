@@ -1,0 +1,27 @@
+{
+	"name": "chat-adapter-notion",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"main": "src/index.ts",
+	"types": "src/index.ts",
+	"scripts": {
+		"build": "tsc",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check .",
+		"lint:fix": "biome check --fix .",
+		"test": "vitest run"
+	},
+	"dependencies": {
+		"@notionhq/client": "^2.3.0"
+	},
+	"peerDependencies": {
+		"chat": "^4.15.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"chat": "^4.15.0",
+		"typescript": "^5.9.3",
+		"vitest": "^3.2.4"
+	}
+}
